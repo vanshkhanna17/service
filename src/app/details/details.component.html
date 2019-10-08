@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Details of {{book.name}}</h1>
+    <div class="row">
+        <div class="col-md-6 info">
+          <div>Title: {{book.name}}</div>
+          <div>Author: {{book.auna}}</div>
+          <div>Price: {{book.price}}</div>
+        </div>
+        <div class="col-md-6">
+            <legend>Reviews</legend>
+            <div *ngFor="let i of book.txt, let j=index">
+                <div class="form-group">
+                    <label class="col-form-label">Review {{j+1}}</label>
+                    <div class="form-control">
+                        {{i}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

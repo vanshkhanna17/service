@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-striped table-hover">
+        <thead class="thaed thead-dark">
+            <th>Id</th>
+            <th>Book Title</th>
+            <th>Author Name</th>
+            <th>Price</th>
+            <th>Edit/Remove</th>
+        </thead>
+        <tbody *ngFor="let arr of array, let i = index">
+            <td>{{arr.id + 1}}</td>
+            <td>{{arr.name}}</td>
+            <td>{{arr.auna}}</td>
+            <td>{{arr.price}}</td>
+            <td><a routerLink="edit/{{arr.id}}" class="btn btn-warning">Edit</a>&nbsp;<a
+                    class="btn btn-danger" (click)="remv(i)">Remove</a>&nbsp;<a class="btn btn-primary"
+                    routerLink="review/{{arr.id}}">Add Review</a>&nbsp;<a
+                    class="btn btn-primary" routerLink="details/{{arr.id}}">Details</a></td>
+        </tbody>
+    </table>
+</div>

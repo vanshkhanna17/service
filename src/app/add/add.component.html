@@ -1,0 +1,22 @@
+ <div class="container">
+    <form (ngSubmit)="add()">
+        <div class="row">
+            <fieldset class="col-md-6">
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Book Title:</label>&nbsp;{{name}}
+                    <input class="form-control" type="text" name="name" placeholder="Book Title" [(ngModel)]="name">
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Author Name:</label>&nbsp;&nbsp;{{auna}}
+                    <input class="form-control" type="text" name="auna" placeholder="Author Name" [(ngModel)]="auna">
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Price:</label>&nbsp;&nbsp;{{price}}
+                    <input class="form-control" type="text" name="price" placeholder="Book Price" [(ngModel)]="price">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Book</button>
+            </fieldset>
+        </div>
+    </form>
+</div>
+ 
